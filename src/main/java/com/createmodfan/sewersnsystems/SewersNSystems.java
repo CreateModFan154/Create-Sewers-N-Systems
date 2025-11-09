@@ -1,5 +1,6 @@
 package com.createmodfan.sewersnsystems;
 
+import com.createmodfan.sewersnsystems.item.ModCreativeModeTabs;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,7 +25,7 @@ public class SewersNSystems
     public SewersNSystems(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
-
+        ModCreativeModeTabs.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
