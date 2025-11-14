@@ -22,7 +22,13 @@ public class ModCreativeModeTabs {
                     pOutput.accept(ModBlocks.SEWER_BRICK.get());
                     pOutput.accept(ModBlocks.CRACKED_SEWER_BRICK.get());
                     pOutput.accept(ModBlocks.MOSSY_SEWER_BRICK.get());
+                    pOutput.accept(ModBlocks.SEWER_GRATE.get());
                     pOutput.accept(ModItems.SEWER_BRICK_ITEM.get());
+                    pOutput.accept(ModBlocks.PHOSPHATE_ORE.get());
+                    pOutput.accept(ModBlocks.DEEPSLATE_PHOSPHATE_ORE.get());
+                    pOutput.accept(ModItems.PHOSPHATE_POWDER.get());
+                    pOutput.accept(ModItems.GUIDEBOOK.get());
+
 
                     })
                     .build()

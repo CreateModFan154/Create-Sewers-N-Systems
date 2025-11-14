@@ -3,5 +3,10 @@
   "block.sewers_n_systems.sewer_brick": "Sewer Bricks",
   "block.sewers_n_systems.mossy_sewer_brick": "Mossy Sewer Bricks",
   "block.sewers_n_systems.cracked_sewer_brick": "Cracked Sewer Bricks",
-  "item.sewers_n_systems.sewer_brick_item": "Sewer Brick"
+  "item.sewers_n_systems.sewer_brick_item": "Sewer Brick",
+  "block.sewers_n_systems.sewer_grate": "Sewer Grate",
+  "item.sewers_n_systems.guidebook": "Sewers N' Systems Guidebook",
+  "item.sewers_n_systems.phosphate_powder": "Phosphate Powder",
+  "block.sewers_n_systems.phosphate_ore": "Phosphate Ore",
+  "block.sewers_n_systems.deepslate_phosphate_ore": "Deepslate Phosphate Ore"
 }

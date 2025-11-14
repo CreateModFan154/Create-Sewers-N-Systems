@@ -13,6 +13,10 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, SewersNSystems.MOD_ID);
     public static final RegistryObject<Item> SEWER_BRICK_ITEM = ITEMS.register("sewer_brick_item",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PHOSPHATE_POWDER = ITEMS.register("phosphate_powder",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GUIDEBOOK = ITEMS.register("guidebook",
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
