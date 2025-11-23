@@ -8,5 +8,11 @@
   "item.sewers_n_systems.guidebook": "Sewers N' Systems Guidebook",
   "item.sewers_n_systems.phosphate_powder": "Phosphate Powder",
   "block.sewers_n_systems.phosphate_ore": "Phosphate Ore",
-  "block.sewers_n_systems.deepslate_phosphate_ore": "Deepslate Phosphate Ore"
+  "block.sewers_n_systems.deepslate_phosphate_ore": "Deepslate Phosphate Ore",
+  "item.sewers_n_systems.cheap_nozzle": "$2.50 Amaxon™ nozzle",
+  "item.sewers_n_systems.fancy_nozzle": "Mr. German Nozzle",
+  "block.sewers_n_systems.light_sewer_bricks": "Light Sewer Bricks",
+  "block.sewers_n_systems.light_mossy_sewer_brick": "Light Mossy Sewer Bricks",
+  "block.sewers_n_systems.light_cracked_sewer_brick": "Light Cracked Sewer Bricks",
+  "item.sewers_n_systems.light_sewer_brick": "Light Sewer Brick"
 }

@@ -28,6 +28,9 @@ public class ModCreativeModeTabs {
                     pOutput.accept(ModBlocks.DEEPSLATE_PHOSPHATE_ORE.get());
                     pOutput.accept(ModItems.PHOSPHATE_POWDER.get());
                     pOutput.accept(ModItems.GUIDEBOOK.get());
+                    pOutput.accept(ModItems.CHEAP_NOZZLE.get());
+                    pOutput.accept(ModItems.FANCY_NOZZLE.get());
+
 
 
                     })

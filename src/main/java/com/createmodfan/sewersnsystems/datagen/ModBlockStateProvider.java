@@ -19,7 +19,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MOSSY_SEWER_BRICK);
         blockWithItem(ModBlocks.SEWER_BRICK);
         blockWithItem(ModBlocks.SEWER_GRATE);
-
+        blockWithItem(ModBlocks.PHOSPHATE_BLOCK);
+        blockWithItem(ModBlocks.PHOSPHATE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_PHOSPHATE_ORE);
+        blockWithItem(ModBlocks.LIGHT_CRACKED_SEWER_BRICK);
+        blockWithItem(ModBlocks.LIGHT_MOSSY_SEWER_BRICK);
+        blockWithItem(ModBlocks.LIGHT_SEWER_BRICKS);
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
