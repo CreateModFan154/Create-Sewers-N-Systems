@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "sewers_n_systems:sewer_brick"
-  },
-  "result": "sewers_n_systems:cracked_sewer_brick",
-  "count": 1
-}

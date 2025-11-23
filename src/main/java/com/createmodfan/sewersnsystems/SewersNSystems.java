@@ -1,13 +1,16 @@
 package com.createmodfan.sewersnsystems;
 
 import com.createmodfan.sewersnsystems.block.ModBlocks;
+import com.createmodfan.sewersnsystems.datagen.loot.ModBlockLootTables;
 import com.createmodfan.sewersnsystems.item.ModCreativeModeTabs;
 import com.createmodfan.sewersnsystems.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
