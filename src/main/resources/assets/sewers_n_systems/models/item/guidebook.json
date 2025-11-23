@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "sewers_n_systems:item/guidebook"
+  }
+}

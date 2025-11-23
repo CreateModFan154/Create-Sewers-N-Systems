@@ -2,24 +2,14 @@ package com.createmodfan.sewersnsystems.block;
 
 import com.createmodfan.sewersnsystems.SewersNSystems;
 import com.createmodfan.sewersnsystems.item.ModItems;
-import com.simibubi.create.foundation.data.BuilderTransformers;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.tterrag.registrate.builders.BlockBuilder;
-import com.tterrag.registrate.util.entry.BlockEntry;
-import io.netty.channel.epoll.EpollDatagramChannel;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import com.simibubi.create.content.decoration.encasing.CasingBlock;
-import com.simibubi.create.content.decoration.encasing.EncasedCTBehaviour;
-import com.simibubi.create.content.decoration.encasing.EncasingRegistry;
-import static com.simibubi.create.foundation.data.CreateRegistrate.casingConnectivity;
 
 import java.util.function.Supplier;
 
@@ -49,6 +39,23 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> PHOSPHATE_BLOCK = registerBlock("phosphate_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.REDSTONE_BLOCK)));
+    //stairs
+    public static final RegistryObject<Block> LIGHT_SEWER_BRICK_STAIRS = registerBlock("light_sewer_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.BRICK_STAIRS)));
+    public static final RegistryObject<Block> SEWER_BRICK_STAIRS = registerBlock("sewer_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.BRICK_STAIRS)));
+    //slabs
+    public static final RegistryObject<Block> LIGHT_SEWER_BRICK_SLAB = registerBlock("sewer_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
+    public static final RegistryObject<Block> SEWER_BRICK_SLAB = registerBlock("sewer_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
+    //walls
+    public static final RegistryObject<Block> LIGHT_SEWER_BRICK_WALL = registerBlock("sewer_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    public static final RegistryObject<Block> SEWER_BRICK_WALL = registerBlock("sewer_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

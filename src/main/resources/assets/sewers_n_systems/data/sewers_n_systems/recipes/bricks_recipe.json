@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    },
+    {
+      "item": "sewers_n_systems:sewer_brick_item"
+    }
+  ],
+  "result": {
+    "item": "sewers_n_systems:sewer_brick",
+    "count": 1
+  }
+}

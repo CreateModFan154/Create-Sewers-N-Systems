@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "sewers_n_systems:block/deepslate_phosphate_ore"
+  }
+}

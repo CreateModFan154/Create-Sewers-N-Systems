@@ -1,0 +1,13 @@
+{
+  "values":[
+"sewersnsystems:sewer_grate",
+"sewersnsystems:sewer_brick",
+"sewersnsystems:cracked_sewer_brick",
+"sewersnsystems:mossy_sewer_brick",
+    "sewersnsystems:light_sewer_bricks",
+    "sewersnsystems:light_cracked_sewer_brick",
+    "sewersnsystems:light_mossy_sewer_brick",
+    "sewersnsystems:phosphate_ore",
+    "sewersnsystems:deepslate_phosphate_ore"
+  ]
+}
