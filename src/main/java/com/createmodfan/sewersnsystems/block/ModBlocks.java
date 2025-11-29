@@ -18,7 +18,7 @@ public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SewersNSystems.MOD_ID);
-
+// MISC BLOCKS
     public static final RegistryObject<Block> SEWER_BRICK = registerBlock("sewer_brick",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> CRACKED_SEWER_BRICK = registerBlock("cracked_sewer_brick",
@@ -47,12 +47,12 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.BRICK_STAIRS)));
     //slabs
-    public static final RegistryObject<Block> LIGHT_SEWER_BRICK_SLAB = registerBlock("sewer_brick_slab",
+    public static final RegistryObject<Block> LIGHT_SEWER_BRICK_SLAB = registerBlock("light_sewer_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
     public static final RegistryObject<Block> SEWER_BRICK_SLAB = registerBlock("sewer_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
     //walls
-    public static final RegistryObject<Block> LIGHT_SEWER_BRICK_WALL = registerBlock("sewer_brick_wall",
+    public static final RegistryObject<Block> LIGHT_SEWER_BRICK_WALL = registerBlock("light_sewer_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
     public static final RegistryObject<Block> SEWER_BRICK_WALL = registerBlock("sewer_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));

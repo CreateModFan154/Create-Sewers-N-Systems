@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "sewers_n_systems:block/light_sewer_bricks"
+
+  }
+}

@@ -2,6 +2,7 @@ package com.createmodfan.sewersnsystems.item;
 
 import com.createmodfan.sewersnsystems.SewersNSystems;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,6 +24,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LIGHT_SEWER_BRICK = ITEMS.register("light_sewer_brick",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAFETY_VEST = ITEMS.register("safety_vest",
+            () -> new ArmorItem(ModArmorMaterials.SAFETY_VEST, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

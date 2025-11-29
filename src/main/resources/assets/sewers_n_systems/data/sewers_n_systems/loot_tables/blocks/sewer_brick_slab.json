@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "sewers_n_systems:sewer_brick_slab"
+                }
+            ]
+        }
+    ]
+}

@@ -30,7 +30,17 @@ public class ModCreativeModeTabs {
                     pOutput.accept(ModItems.GUIDEBOOK.get());
                     pOutput.accept(ModItems.CHEAP_NOZZLE.get());
                     pOutput.accept(ModItems.FANCY_NOZZLE.get());
-
+                    pOutput.accept(ModBlocks.LIGHT_SEWER_BRICK_WALL.get());
+                    pOutput.accept(ModBlocks.SEWER_BRICK_WALL.get());
+                    pOutput.accept(ModBlocks.SEWER_BRICK_STAIRS.get());
+                    pOutput.accept(ModBlocks.LIGHT_SEWER_BRICK_STAIRS.get());
+                    pOutput.accept(ModBlocks.SEWER_BRICK_SLAB.get());
+                    pOutput.accept(ModBlocks.LIGHT_SEWER_BRICK_SLAB.get());
+                    pOutput.accept(ModBlocks.LIGHT_SEWER_BRICKS.get());
+                    pOutput.accept(ModBlocks.MOSSY_SEWER_BRICK.get());
+                    pOutput.accept(ModBlocks.LIGHT_CRACKED_SEWER_BRICK.get());
+                    pOutput.accept(ModItems.LIGHT_SEWER_BRICK.get());
+                    pOutput.accept(ModItems.SAFETY_VEST.get());
 
 
                     })

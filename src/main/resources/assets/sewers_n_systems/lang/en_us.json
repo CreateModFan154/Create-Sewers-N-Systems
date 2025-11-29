@@ -14,5 +14,11 @@
   "block.sewers_n_systems.light_sewer_bricks": "Light Sewer Bricks",
   "block.sewers_n_systems.light_mossy_sewer_brick": "Light Mossy Sewer Bricks",
   "block.sewers_n_systems.light_cracked_sewer_brick": "Light Cracked Sewer Bricks",
-  "item.sewers_n_systems.light_sewer_brick": "Light Sewer Brick"
+  "item.sewers_n_systems.light_sewer_brick": "Light Sewer Brick",
+  "block.sewers_n_systems.light_sewer_brick_stairs": "Light Sewer Brick Stairs",
+  "block.sewers_n_systems.light_sewer_brick_slab": "Light Sewer Brick Slab",
+  "block.sewers_n_systems.light_sewer_brick_wall": "Light Sewer Brick Wall",
+  "block.sewers_n_systems.sewer_brick_stairs": "Sewer Brick Stairs",
+  "block.sewers_n_systems.sewer_brick_slab": "Sewer Brick Slab",
+  "block.sewers_n_systems.sewer_brick_wall": "Sewer Brick Wall"
 }
