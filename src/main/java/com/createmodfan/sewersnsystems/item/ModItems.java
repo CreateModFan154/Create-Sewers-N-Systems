@@ -18,6 +18,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GUIDEBOOK = ITEMS.register("guidebook",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WIRE_SPOOL = ITEMS.register("wire_spool",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHEAP_NOZZLE = ITEMS.register("cheap_nozzle",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FANCY_NOZZLE = ITEMS.register("fancy_nozzle",
