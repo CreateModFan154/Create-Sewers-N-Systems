@@ -2,7 +2,6 @@ package com.createmodfan.sewersnsystems.block;
 
 import com.createmodfan.sewersnsystems.SewersNSystems;
 import com.createmodfan.sewersnsystems.item.ModItems;
-import com.createmodfan.sewersnsystems.core.FencePartBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -40,7 +39,6 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> PHOSPHATE_BLOCK = registerBlock("phosphate_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.REDSTONE_BLOCK)));
-
     //stairs
     public static final RegistryObject<Block> LIGHT_SEWER_BRICK_STAIRS = registerBlock("light_sewer_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
@@ -58,17 +56,6 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
     public static final RegistryObject<Block> SEWER_BRICK_WALL = registerBlock("sewer_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
-    //custom model blocks
-    public static final RegistryObject<Block> FENCE_BASE =
-            registerBlock("fence_base",
-                    () -> new FencePartBlock(
-                            BlockBehaviour.Properties.copy(Blocks.GRAY_CONCRETE).noOcclusion()
-                    ));
-    public static final RegistryObject<Block> FENCE_BASE_POLE =
-            registerBlock("fence_base_pole",
-                    () -> new FencePartBlock(
-                            BlockBehaviour.Properties.copy(Blocks.GRAY_CONCRETE).noOcclusion()
-                    ));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
