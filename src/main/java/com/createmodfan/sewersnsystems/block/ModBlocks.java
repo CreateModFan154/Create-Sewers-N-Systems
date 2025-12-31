@@ -7,6 +7,7 @@ import com.createmodfan.sewersnsystems.item.ModItems;
 import com.simibubi.create.Create;
 import com.createmodfan.sewersnsystems.core.SNSCasingBlock;
 import com.simibubi.create.content.decoration.encasing.CasingBlock;
+import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.createmodfan.sewersnsystems.SNSSpriteShifts;
@@ -26,7 +27,16 @@ import java.util.function.Supplier;
 public class ModBlocks {
     private static final CreateRegistrate REGISTRATE =
             CreateRegistrate.create(SewersNSystems.MOD_ID);
-
+    //casings
+    public static final BlockEntry<CasingBlock> SEWER_CASING = REGISTRATE.block("sewer_casing", CasingBlock::new)
+            .properties(p -> p.mapColor(MapColor.PODZOL))
+            .transform(BuilderTransformers.casing(() -> SNSSpriteShifts.SEWER_CASING))
+            .register();
+    /**template [from TFMG]:
+     *  public static final BlockEntry<CasingBlock> STEEL_CASING = REGISTRATE.block("steel_casing", CasingBlock::new)
+     *.transform(BuilderTransformers.casing(() -> TFMGSpriteShifts.STEEL_CASING))
+     *.register();
+     */
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SewersNSystems.MOD_ID);
 // MISC BLOCKS
@@ -50,11 +60,6 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> PHOSPHATE_BLOCK = registerBlock("phosphate_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.REDSTONE_BLOCK)));
-        //casings
-        public static final BlockEntry<CasingBlock> SEWER_CASING = REGISTRATE.block("sewer_casing", CasingBlock::new)
-                .properties(p -> p.mapColor(MapColor.PODZOL))
-                .transform(SNSBuilderTransformers.casing(() -> SNSSpriteShifts.SEWER_CASING))
-                .register();
     //stairs
     public static final RegistryObject<Block> LIGHT_SEWER_BRICK_STAIRS = registerBlock("light_sewer_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
@@ -100,6 +105,6 @@ public class ModBlocks {
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
-
+        REGISTRATE.registerEventListeners(eventBus);
     }
 }

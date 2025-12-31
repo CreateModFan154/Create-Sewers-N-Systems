@@ -47,13 +47,17 @@ public class SewersNSystems
     {
         IEventBus modEventBus = context.getModEventBus();
         ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ModBlocks.register(modEventBus); // ModBlocks.register calls REGISTRATE.registerEventListeners internally
         ModTags.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
-        MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        MinecraftForge.EVENT_BUS.register(this);
+
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
     }
     public static ResourceLocation asResource(String path) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
