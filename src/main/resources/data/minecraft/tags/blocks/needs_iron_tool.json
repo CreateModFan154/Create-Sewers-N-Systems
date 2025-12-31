@@ -1,5 +1,6 @@
 {
-  "values":[
-    "sewersnsystems:sewer_grate"
-  ]
+    "replace": false,
+    "values": [
+        "sewers_n_systems:sewer_grate"
+    ]
 }

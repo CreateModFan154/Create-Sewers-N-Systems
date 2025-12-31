@@ -41,7 +41,9 @@ public class ModCreativeModeTabs {
                     pOutput.accept(ModBlocks.LIGHT_CRACKED_SEWER_BRICK.get());
                     pOutput.accept(ModItems.LIGHT_SEWER_BRICK.get());
                     pOutput.accept(ModItems.SAFETY_VEST.get());
-
+                    pOutput.accept(ModBlocks.FENCE_BASE.get());
+                    pOutput.accept(ModBlocks.FENCE_POLE.get());
+                    pOutput.accept(ModBlocks.SEWER_CASING.get());
 
                     })
                     .build()
