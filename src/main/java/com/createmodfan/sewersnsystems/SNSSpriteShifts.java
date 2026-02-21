@@ -1,6 +1,5 @@
 package com.createmodfan.sewersnsystems;
 
-import com.simibubi.create.Create;
 import com.simibubi.create.foundation.block.connected.AllCTTypes;
 import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
 import com.simibubi.create.foundation.block.connected.CTSpriteShifter;
@@ -21,8 +20,8 @@ public class SNSSpriteShifts {
     public static final CTSpriteShiftEntry SEWER_CASING = omni("sewer_casing");
 
     private static CTSpriteShiftEntry getCT(CTType type, String blockTextureName, String connectedTextureName) {
-        return CTSpriteShifter.getCT(type, Create.asResource("block/" + blockTextureName),
-                Create.asResource("block/" + connectedTextureName + "_connected"));
+        return CTSpriteShifter.getCT(type, SewersNSystems.asResource("block/" + blockTextureName),
+                SewersNSystems.asResource("block/" + connectedTextureName + "_connected"));
     }
 
     private static CTSpriteShiftEntry getCT(CTType type, String blockTextureName) {
