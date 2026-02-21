@@ -1,6 +1,7 @@
 package com.createmodfan.sewersnsystems.block;
 
 import com.createmodfan.sewersnsystems.SewersNSystems;
+import com.createmodfan.sewersnsystems.core.ManholeCoverBlock;
 import com.createmodfan.sewersnsystems.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -56,6 +57,9 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
     public static final RegistryObject<Block> SEWER_BRICK_WALL = registerBlock("sewer_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    //Manholes
+    public static final RegistryObject<Block> MANHOLE_COVER = registerBlock("manhole_cover",
+            () -> new ManholeCoverBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

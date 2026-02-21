@@ -14,6 +14,14 @@ All assets in this project are All Rights Reserved (ARR).
 
 You may not use, copy, distribute, modify, or create derivatives of the All Rights Reserved assets without explicit permission from the copyright holder (me).
 
+2.1. Exceptions
+
+The following assets are under other licenses than the main license.
+
+ * src/main/resources/assets/sewers-n-systems/textures/item/screwdriver.png - Edited from TFMG's screwdriver texture, under MIT terms. by: drmangotea or another contributor.
+
+Unless otherwise stated, modifications to third-party assets retain the original license.
+
 3. Attribution
 
 When redistributing or using MIT-licensed code or assets, you must include the appropriate copyright notice and this license.
