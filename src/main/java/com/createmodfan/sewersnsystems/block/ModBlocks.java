@@ -2,6 +2,7 @@ package com.createmodfan.sewersnsystems.block;
 
 import com.createmodfan.sewersnsystems.SewersNSystems;
 import com.createmodfan.sewersnsystems.core.ManholeCoverBlock;
+import com.createmodfan.sewersnsystems.core.SNSCasingBlock;
 import com.createmodfan.sewersnsystems.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -40,6 +41,11 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> PHOSPHATE_BLOCK = registerBlock("phosphate_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.REDSTONE_BLOCK)));
+
+    //Casings
+    public static final RegistryObject<Block> SEWER_CASING = registerBlock("sewer_casing",
+            () -> new SNSCasingBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
+
     //stairs
     public static final RegistryObject<Block> LIGHT_SEWER_BRICK_STAIRS = registerBlock("light_sewer_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
