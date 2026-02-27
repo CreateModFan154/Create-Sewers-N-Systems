@@ -16,6 +16,7 @@
         "sewers_n_systems:light_sewer_brick_stairs",
         "sewers_n_systems:cracked_sewer_brick",
         "sewers_n_systems:sewer_brick_stairs",
-        "sewers_n_systems:phosphate_ore"
+        "sewers_n_systems:phosphate_ore",
+        "sewers_n_systems:sewer_casing"
     ]
 }
