@@ -5,13 +5,17 @@ import com.createmodfan.sewersnsystems.item.ModCreativeModeTabs;
 import com.createmodfan.sewersnsystems.item.ModItems;
 import com.createmodfan.sewersnsystems.util.ModTags;
 import com.mojang.logging.LogUtils;
+import com.simibubi.create.CreateClient;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import com.tterrag.registrate.Registrate;
+import com.simibubi.create.content.decoration.encasing.CasingConnectivity;
 import cpw.mods.util.Lazy;
 import net.createmod.catnip.lang.FontHelper;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -58,6 +62,7 @@ public class SewersNSystems
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
+
     }
     public static ResourceLocation asResource(String path) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
@@ -88,7 +93,10 @@ public class SewersNSystems
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
+            CreateClient.CASING_CONNECTIVITY.make(ModBlocks.SEWER_CASING.get(), SNSSpriteShifts.SEWER_CASING);            event.enqueueWork(() -> {
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.MANHOLE_COVER.get(), RenderType.cutout());
+            });
+
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }

@@ -1,7 +1,10 @@
 package com.createmodfan.sewersnsystems.block;
 
 import com.createmodfan.sewersnsystems.SewersNSystems;
+import com.createmodfan.sewersnsystems.core.ConeBlock;
+import com.createmodfan.sewersnsystems.core.ElectricalPanelBlock;
 import com.createmodfan.sewersnsystems.core.ManholeCoverBlock;
+import com.createmodfan.sewersnsystems.core.SNSCasingBlock;
 import com.createmodfan.sewersnsystems.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -60,6 +63,15 @@ public class ModBlocks {
     //Manholes
     public static final RegistryObject<Block> MANHOLE_COVER = registerBlock("manhole_cover",
             () -> new ManholeCoverBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    //Cone
+    public static final RegistryObject<Block> TRAFFIC_CONE = registerBlock("traffic_cone",
+            () -> new ConeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    //Panels
+    public static final RegistryObject<Block> ELECTRIC_PANEL = registerBlock("electric_panel",
+            () -> new ElectricalPanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    //Casings
+    public static final RegistryObject<Block> SEWER_CASING = registerBlock("sewer_casing",
+            () -> new SNSCasingBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

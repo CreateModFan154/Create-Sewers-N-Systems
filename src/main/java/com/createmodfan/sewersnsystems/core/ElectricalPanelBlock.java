@@ -19,13 +19,13 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ManholeCoverBlock extends Block {
+public class ElectricalPanelBlock extends Block {
     public static final EnumProperty<Half> HALF = EnumProperty.create("half", Half.class);
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     private static final VoxelShape BOTTOM_SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D);
     private static final VoxelShape TOP_SHAPE = Block.box(0.0D, 14.0D, 0.0D, 16.0D, 16.0D, 16.0D);
 
-    public ManholeCoverBlock(Properties properties) {
+    public ElectricalPanelBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(HALF, Half.BOTTOM)

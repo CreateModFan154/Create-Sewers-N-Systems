@@ -22,5 +22,7 @@
   "block.sewers_n_systems.sewer_brick_slab": "Sewer Brick Slab",
   "block.sewers_n_systems.sewer_brick_wall": "Sewer Brick Wall",
   "item.sewers_n_systems.screwdriver": "Screwdriver",
-  "block.sewers_n_systems.manhole_cover": "Manhole Cover"
+  "block.sewers_n_systems.manhole_cover": "Manhole Cover",
+  "block.sewers_n_systems.traffic_cone": "Traffic Cone",
+  "sewers_n_systems.tooltips.traffic_cone": "Because why not lol… maybe don’t hit it with your car, please."
 }
