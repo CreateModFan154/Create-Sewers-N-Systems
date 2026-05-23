@@ -6,14 +6,23 @@ import com.createmodfan.sewersnsystems.core.ElectricalPanelBlock;
 import com.createmodfan.sewersnsystems.core.ManholeCoverBlock;
 import com.createmodfan.sewersnsystems.core.SNSCasingBlock;
 import com.createmodfan.sewersnsystems.item.ModItems;
+
+import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import com.simibubi.create.content.decoration.encasing.CasingBlock;
+
+import static com.createmodfan.sewersnsystems.SewersNSystems.REGISTRATE;
+import static com.simibubi.create.foundation.data.CreateRegistrate.casingConnectivity;
+
 
 import java.util.function.Supplier;
 
@@ -72,8 +81,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ELECTRIC_PANEL = registerBlock("electric_panel",
             () -> new ElectricalPanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     //Casings
-    public static final RegistryObject<Block> SEWER_CASING = registerBlock("sewer_casing",
-            () -> new SNSCasingBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
+    public static final BlockEntry<CasingBlock> SEWER_CASING = REGISTRATE.block("steel_casing", CasingBlock::new).register();
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

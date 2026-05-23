@@ -46,6 +46,7 @@ public class ModCreativeModeTabs {
                     pOutput.accept(ModBlocks.MANHOLE_COVER.get());
                     pOutput.accept(ModBlocks.TRAFFIC_CONE.get());
                     pOutput.accept(ModBlocks.SEWER_CASING.get());
+                    pOutput.accept(ModBlocks.ELECTRIC_PANEL.get());
 
                     })
                     .build()

@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "sewers_n_systems:block/electrical_panel"
+		"0": "sewers_n_systems:block/electrical_box"
 	},
 	"elements": [
 		{
