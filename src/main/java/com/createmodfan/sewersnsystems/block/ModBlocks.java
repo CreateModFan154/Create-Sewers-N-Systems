@@ -1,5 +1,6 @@
 package com.createmodfan.sewersnsystems.block;
 
+import com.createmodfan.sewersnsystems.SNSSpriteShifts;
 import com.createmodfan.sewersnsystems.SewersNSystems;
 import com.createmodfan.sewersnsystems.core.ConeBlock;
 import com.createmodfan.sewersnsystems.core.ElectricalPanelBlock;
@@ -7,12 +8,16 @@ import com.createmodfan.sewersnsystems.core.ManholeCoverBlock;
 import com.createmodfan.sewersnsystems.core.SNSCasingBlock;
 import com.createmodfan.sewersnsystems.item.ModItems;
 
+import com.createmodfan.sewersnsystems.util.SNSBuilderTransformers;
+import com.simibubi.create.AllSpriteShifts;
+import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -59,7 +64,7 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.BRICK_STAIRS)));
     public static final RegistryObject<Block> SEWER_BRICK_STAIRS = registerBlock("sewer_brick_stairs",
-            () -> new StairBlock(() -> ModBlocks.LIGHT_SEWER_BRICKS.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.SEWER_BRICK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.BRICK_STAIRS)));
     //slabs
     public static final RegistryObject<Block> LIGHT_SEWER_BRICK_SLAB = registerBlock("light_sewer_brick_slab",
@@ -81,7 +86,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> ELECTRIC_PANEL = registerBlock("electric_panel",
             () -> new ElectricalPanelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     //Casings
-    public static final BlockEntry<CasingBlock> SEWER_CASING = REGISTRATE.block("steel_casing", CasingBlock::new).register();
+    public static final BlockEntry<CasingBlock> SEWER_CASING = REGISTRATE.block("sewer_casing", CasingBlock::new)
+            .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_GRAY)
+                    .sound(SoundType.DEEPSLATE_BRICKS))
+            //.transform(SNSBuilderTransformers.casing(() -> SNSSpriteShifts.SEWER_CASING))
+            .register();
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

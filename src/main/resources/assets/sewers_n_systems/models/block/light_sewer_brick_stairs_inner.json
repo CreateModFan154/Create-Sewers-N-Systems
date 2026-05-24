@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "sewers_n_systems:block/light_sewer_bricks",
-    "side": "sewers_n_systems:block/light_sewer_bricks",
-    "top": "sewers_n_systems:block/light_sewer_bricks"
-  }
-}

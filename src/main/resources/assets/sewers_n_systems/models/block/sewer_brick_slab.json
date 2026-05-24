@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "sewers_n_systems:block/sewer_bricks",
-    "side": "sewers_n_systems:block/sewer_bricks",
-    "top": "sewers_n_systems:block/sewer_bricks"
-  }
-}
