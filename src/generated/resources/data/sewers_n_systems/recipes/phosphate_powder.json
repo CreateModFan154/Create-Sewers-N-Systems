@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sewers_n_systems:phosphate_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "sewers_n_systems:phosphate_powder"
+  }
+}

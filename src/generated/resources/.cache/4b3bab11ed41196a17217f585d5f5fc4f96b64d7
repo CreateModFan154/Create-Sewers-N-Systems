@@ -1,0 +1,4 @@
+// 1.20.1	2026-05-23T21:40:10.5806959	Tags for minecraft:block mod id sewers_n_systems
+7310537c86265c2ef6bba381f93b13e19daf20f7 data/minecraft/tags/blocks/needs_stone_tool.json
+017d12cd4e811f4448d6edff1f74070b301cbaa7 data/minecraft/tags/blocks/slabs.json
+182418dd8f91c4446fbef84887bf2c8b9b2fcf3d data/minecraft/tags/blocks/walls.json

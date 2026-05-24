@@ -1,0 +1,6 @@
+// 1.20.1	2026-05-23T20:14:47.9336135	Registrate Provider for sewers_n_systems [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+9e89aeeba56544a67e8be27006aeadeab55ad444 assets/sewers_n_systems/blockstates/sewer_casing.json
+0d22a43e58c171c83526ad5e71bbb9998bf5bce8 assets/sewers_n_systems/lang/en_ud.json
+08d29ded94048b222dca1001932e335f1f34ddda assets/sewers_n_systems/lang/en_us.json
+aec78e14c22e26fbe50e0be7f9f349a19884d8ff assets/sewers_n_systems/models/block/sewer_casing.json
+3ac7fe73ae112a4889d0520a9075d18a9c08877d data/sewers_n_systems/loot_tables/blocks/sewer_casing.json
